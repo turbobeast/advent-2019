@@ -8,5 +8,5 @@ main :: IO ()
 main = do
     rawData <- getContents
     let parsedInput = parseInput rawData
-        mass =  (sum . map fuel) parsedInput
-    putStrLn (show mass)
+        totalFuel =  (sum . map fuel) parsedInput
+    putStrLn (show totalFuel)
